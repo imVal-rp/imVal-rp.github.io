@@ -1,0 +1,135 @@
+html{
+    background-color: #000;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family:monospace;
+    background: rgb(150, 227, 230);
+    background: linear-gradient(90deg, #ff0101,#7400f8,rgb(0, 255, 55)) ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+canvas{
+    margin: 10px auto;
+    background-color: lightgray;
+    border:  2px solid #23ad00;
+}
+
+.lab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-between; /* Centra los elementos en el eje principal */
+}
+
+.pause{
+    background-color:darkblue;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    margin-left: 250px;
+}
+
+.pause::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, purple,blue,deeppink,yellow,
+                 purple,blue,deeppink,yellow);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing{
+    0%{
+        background-position: 0 0;
+    }
+
+    50%{
+        background-position: 400% 0;
+    }
+
+    100%{
+        background-position: 0 0 ;
+    }
+}
+
+.resume{
+    background-color: darkblue;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+.resume::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, purple,blue,deeppink,yellow,
+                 purple,blue,deeppink,yellow);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+.restart{
+    background-color: darkblue;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    margin-right: 250px;
+}
+
+.restart::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, purple,blue,deeppink,yellow,
+                 purple,blue,deeppink,yellow);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+
