@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laberinto</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+
+    <h1 class="titulo">Laberinto</h1>
+
+    <div class="container">
+        <div><button class="pause" onclick="pause()">PAUSA</button></div>
+        <div><button class="resume" onclick="resume()">REANUDAR</button></div>
+        <div><button class="restart" onclick="restart()">REINICIAR</button></div>
+    </div>
+
+    <div class="lab">
+        <canvas id="laberintoCanvas" width="810" height="810"></canvas>
+    </div>
+    
+    
+
+    <script src="./funciones.js"></script>
+</body>
+</html>
